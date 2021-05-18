@@ -54,6 +54,9 @@ button {
   border-radius: var(--border-radius);
   padding: 5px 40px;
   font-size: var(--regular-font-size);
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__score {
@@ -66,6 +69,9 @@ button {
   height: 40px;
   text-align: center;
   line-height: 40px;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__field {
@@ -96,4 +102,15 @@ button {
 
 .pop-up--hide {
   display: none;
+}
+
+.carrot,
+.bug {
+  transition: transform 0.3s ease-in;
+  cursor: pointer;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
 }
