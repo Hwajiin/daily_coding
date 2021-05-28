@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Music Play</title>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="music__player">
+      <div class="album__arts"></div>
+      <div class="controls">
+        <div class="progress__bar__container">
+          <div class="progress__bar"></div>
+          <div class="track__time">
+            <span class="current__time">00:00</span>
+            <span class="end__time">03:53</span>
+          </div>
+        </div>
+        <div class="sound">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="sound__bar" min="0" max="100" value="50"></input>
+        </div>
+        
+        <div class="control__buttons">
+          <button class="before">
+            <i class="fas fa-angle-double-left fa-lg"></i>
+          </button>
+          <button class="play">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="next">
+            <i class="fas fa-angle-double-right fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
